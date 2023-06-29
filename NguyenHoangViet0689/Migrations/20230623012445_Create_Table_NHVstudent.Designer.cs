@@ -31,6 +31,10 @@ namespace NguyenHoangViet0689.Migrations
                     b.Property<float>("NHVsdt")
                         .HasColumnType("REAL");
 
+                    b.Property<string>("NHVDiachi")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasKey("NHVMaSV");
 
                     b.ToTable("NHVstudent");

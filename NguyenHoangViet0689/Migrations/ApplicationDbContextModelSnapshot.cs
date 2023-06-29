@@ -21,6 +21,10 @@ namespace NguyenHoangViet0689.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("NHVDiachi")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("NHVTenSV")
                         .IsRequired()
                         .HasColumnType("TEXT");

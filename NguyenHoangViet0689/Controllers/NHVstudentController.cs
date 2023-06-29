@@ -55,7 +55,7 @@ namespace NguyenHoangViet0689.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("NHVMaSV,NHVTenSV,NHVsdt")] NHVstudent nHVstudent)
+        public async Task<IActionResult> Create([Bind("NHVMaSV,NHVTenSV,NHVsdt,NHVDiachi")] NHVstudent nHVstudent)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace NguyenHoangViet0689.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("NHVMaSV,NHVTenSV,NHVsdt")] NHVstudent nHVstudent)
+        public async Task<IActionResult> Edit(int id, [Bind("NHVMaSV,NHVTenSV,NHVsdt,NHVDiachi")] NHVstudent nHVstudent)
         {
             if (id != nHVstudent.NHVMaSV)
             {

@@ -17,7 +17,8 @@ namespace NguyenHoangViet0689.Migrations
                     NHVMaSV = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     NHVTenSV = table.Column<string>(type: "TEXT", nullable: false),
-                    NHVsdt = table.Column<float>(type: "REAL", nullable: false)
+                    NHVsdt = table.Column<float>(type: "REAL", nullable: false),
+                    NHVDiachi = table.Column<string>(type: "TEXT", nullable: false),
                 },
                 constraints: table =>
                 {

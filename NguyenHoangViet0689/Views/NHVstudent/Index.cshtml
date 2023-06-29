@@ -21,6 +21,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.NHVsdt)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NHVDiachi)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -35,6 +38,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.NHVsdt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NHVDiachi)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.NHVMaSV">Edit</a> |
